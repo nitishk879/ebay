@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ebay || Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content=&quot;IE=edge">
+    <meta name="viewport" content=&quot;width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!--<link href="hydra.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" href="https://drive.google.com/drive/folders/0By8F0HuHlr6dWndjX3BBT0o5VTA" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 brand-logo">
+            <img class="img-fluid text-center" src="http://i1077.photobucket.com/albums/w463/larckg/transparent_zpsqjdlltqt.jpg"/>
+        </div>
+        <div class="col-12 item-title">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="col-12 item-description-title">
+            <strong>DESCRIPTION</strong>
+        </div>
+        <div class="col-12 item-description">
+            <p>{{description}}</p>
+        </div>
+    </div>
+    <div class="row product-section">
+        <div class="col-12">
+            <p>{{product_description}}</p>
+            <p>{{feature_bullets}}</p>
+            <img class="img-fluid" src="{{main_image}}"/>
+        </div>
+    </div>
+    <div class="row tab-section">
+        <div class="col-12">
+            <div class="tabs">
+                <!-- Radio button and lable for #tab-content1 -->
+                <input id="tab1" name="tabs" type="radio"/>
+                <label for="tab1"><span><a href="http://stores.ebay.com/shopperdeals707" style="color:#fff;">Store</a></span></label>
+                <input checked="checked" id="tab2" name="tabs" type="radio"/>
+                <label for="tab2"><span>Payment</span></label><input id="tab3" name="tabs" type="radio"/>
+                <label for="tab3"><span>Shipping &amp; Handling</span></label><input id="tab4" name="tabs" type="radio"/>
+                <label for="tab4"><span>Returns &amp; Refunds</span></label><input id="tab5" name="tabs" type="radio"/>
+                <label for="tab5"><span>Contact Us</span></label>
+
+                <div class="tab-content" id="tab-content1">
+                    <p>&nbsp;</p>
+                </div>
+                <!-- #tab-content1 -->
+
+                <div class="tab-content" id="tab-content2">
+                    <h3><!-- Tab title here -->Payment</h3>
+
+                    <ul>
+                        <li>We only accept payment via PayPal. We want to make sure that your transaction with us is safe,
+                            and that you are covered with eBay&#39;s shopping benefits offer.
+                        </li>
+                        <li>By using PayPal, you can pay using your credit card by linking your card to Paypal.</li>
+                        <li>We require immediate payment after every transaction in order for you, our buyers, to ensure
+                            access to our inventory.
+                        </li>
+                    </ul>
+                </div>
+                <!-- #tab-content2 -->
+
+                <div class="tab-content" id="tab-content3">
+                    <h3>Shipping &amp; Handling <!-- Tab title here --></h3>
+
+                    <p><strong>Local Pick Up</strong></p>
+
+                    <p>Unfortunately, we do not offer local pick up, due to the nature of our business.</p>
+
+                    <p><strong>Shipping</strong></p>
+
+                    <p>We offer FREE shipping to US ONLY. All orders are shipped within 3 working days after your payment
+                        was processed. We are unable to ship to P.O. boxes, APO or FPO addresses, or international
+                        addresses.</p>
+
+                    <p><strong>Tracking</strong></p>
+
+                    <p>We will update your order and tracking number will be provided once your order was dispatched.</p>
+                </div>
+                <!-- #tab-content3 -->
+
+                <div class="tab-content" id="tab-content4">
+                    <h3>Return/Refund/Cancelation of Order Policy <!-- Tab title here --></h3>
+
+                    <p><strong>Returns/Refunds</strong></p>
+
+                    <p>We offer a 30 day return/exchange policy to all of our products. &nbsp;Please be advised that if you
+                        wish to return your order, the shipping cost will be shouldered by you. We will provide a return
+                        shipping label after you have inform us of returning the item you ordered. After the items was
+                        shipped back, we will inspect the item and will issue a refund to your Paypal account. We cannot
+                        give replacements or refunds for orders that have after 30 days. Please be also advised that the
+                        process of returning an item will take more than 7 days.</p>
+
+                    <p><strong>Cancelation of Order</strong></p>
+
+                    <p>Please be advised that once the order was place and the payment is complete, there may be a case
+                        where we cannot cancel the transaction if you change your mind and want to cancel your order. In
+                        this case, you can decline the item delivery, or follow our return/exchange/refund policy.</p>
+                </div>
+                <!-- #tab-content4 -->
+
+                <div class="tab-content" id="tab-content5">
+                    <h3>Contact <!-- Tab title here --></h3>
+
+                    <p>For safety purposes, we only communicate using eBay messaging. Communication outside eBay will not be
+                        entertained, so please as much as possible, do not contact us using personal messages/emails.</p>
+                </div>
+                <!-- #tab-content5 -->
+            </div>
+            <!--TABS-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 why-to-choose">
+            <h3>Why Choose Us?</h3>
+        </div>
+    </div>
+    <div class="row why-to-choose-description">
+        <div class="col-md-4">
+            <h3>Warehouse Direct</h3>
+            <p>We ship our products directly from our different warehouses across the United States, rest assure that you can get your items quickly and in perfect condition.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Free Shipping</h3>
+            <p>We offer FREE shipping. All orders are shipped quickly within 3 working days after your payment was processed.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Commitment</h3>
+            <p>Customer satisfaction is our top priority. We want to make sure that your transaction with us is smooth. We are committed on making sure that every questions/concerns are answered properly and on time so that every issues can be settled down perfectly, leaving you stress free and happy.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 thank-you">
+            <p>Thank you for visiting our ebaystore!</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+body h1, body h2, body h3, body h4 {
+  color: #ffa300; }
+body .brand-logo {
+  text-align: center; }
+body .item-title {
+  padding: .5rem 1rem;
+  text-align: center;
+  border-top: 10px solid #ffa300; }
+body .item-description-title {
+  background: rgba(255, 163, 0, 0.76);
+  width: 100%;
+  color: white;
+  padding: .5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem; }
+body .item-description {
+  color: black;
+  padding: .5rem 1rem;
+  text-align: center; }
+body .product-section p {
+  font-size: 1rem;
+  color: black;
+  padding: .5rem 1rem; }
+body .product-section img {
+  text-align: center; }
+body .tab-section {
+  /*TABS*/
+  /*TABS*/ }
+  body .tab-section .tabs {
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 4.75rem auto; }
+    body .tab-section .tabs::after {
+      content: '';
+      display: table;
+      clear: both;
+      background: black; }
+    body .tab-section .tabs input[type=radio] {
+      display: none; }
+    body .tab-section .tabs label {
+      background: black;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      -webkit-transition: all 0.5s;
+      /* Safari 3.1 to 6.0 */
+      transition: all 0.5s; }
+      body .tab-section .tabs label:hover {
+        background: #ffa300;
+        color: white; }
+        body .tab-section .tabs label:hover a:hover {
+          text-decoration: none; }
+      body .tab-section .tabs label span {
+        display: none; }
+    @media screen and (max-width: 782px) {
+      body .tab-section .tabs label {
+        display: block;
+        min-width: 100%;
+        font-size: 1rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        margin-bottom: .25rem;
+        font-weight: bold; }
+        body .tab-section .tabs label span {
+          display: block; } }
+    @media screen and (min-width: 783px) {
+      body .tab-section .tabs label {
+        display: table-cell;
+        margin: 0;
+        font-size: 1rem;
+        padding: .25rem .5rem;
+        font-weight: bold;
+        width: 8%; }
+        body .tab-section .tabs label span {
+          display: block; }
+      body .tab-section .tabs label:first-child {
+        max-width: 16%; } }
+  body .tab-section .tab-content {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+    background-color: white; }
+  body .tab-section .tab-content * {
+    -webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out; }
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0; }
+  50% {
+    transform: scale(1.01);
+    opacity: 0.5; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+  body .tab-section .tabs [id^="tab"]:checked + label {
+    background: #ffa300;
+    color: white; }
+  body .tab-section #tab1:checked ~ #tab-content1,
+  body .tab-section #tab2:checked ~ #tab-content2,
+  body .tab-section #tab3:checked ~ #tab-content3,
+  body .tab-section #tab4:checked ~ #tab-content4,
+  body .tab-section #tab5:checked ~ #tab-content5 {
+    display: block; }
+body .why-to-choose {
+  text-align: center;
+  padding: .75rem 1rem;
+  border-top: 2px dotted #ffa300;
+  border-bottom: 2px dotted #ffa300; }
+body .why-to-choose-description {
+  padding: .5rem 1rem;
+  text-align: center; }
+  body .why-to-choose-description p {
+    font-family: verdana, arial, helvetica, sans-serif;
+    color: #663d00; }
+body .thank-you {
+  background: rgba(0, 0, 0, 0.74);
+  color: #ffa300;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=hydra.css.map */

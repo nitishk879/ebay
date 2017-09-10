@@ -1,0 +1,188 @@
+$orange-color: rgb(255, 163, 0);
+$white-color: rgb(255, 255, 255);
+$black-color: rgb(0, 0, 0);
+$brown-color: rgb(102, 61, 0);
+
+// let's define some breakpoints here
+$sm: 580px;
+$md: 782px;
+
+body{
+  h1, h2, h3, h4{
+    color: $orange-color;
+  }
+  .brand-logo{
+    text-align: center;
+  }
+  .item-title{
+    padding: .5rem 1rem;
+    text-align: center;
+    border-top: 10px solid $orange-color;
+  }
+  .item-description-title{
+    background: rgba($orange-color, .76);
+    width: 100%;
+    color: $white-color;
+    padding: .5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  .item-description{
+    color: $black-color;
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+  //  let's start product section from here
+  .product-section{
+    p{
+      font-size: 1rem;
+      color: $black-color;
+      padding: .5rem 1rem;
+    }
+    img{
+      text-align: center;
+    }
+  }
+  .tab-section{
+    /*TABS*/
+    .tabs {
+      float: none;
+      list-style: none;
+      padding: 0;
+      margin: 4.75rem auto;
+      &::after {
+        content: '';
+        display: table;
+        clear: both;
+        background: $black-color;
+      }
+      input[type=radio] {
+        display:none;
+      }
+      label {
+        background: $black-color;
+        color: $white-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+        transition: all 0.5s;
+        &:hover{
+          background: $orange-color;
+          color: $white-color;
+          a:hover{
+            text-decoration: none;
+          }
+        }
+        span{
+          display: none;
+        }
+      }
+      // for all devices small than 782px
+
+      @media screen and (max-width: $md){
+        label{
+          display: block;
+          min-width: 100%;
+          font-size: 1rem;
+          padding-top: .25rem;
+          padding-bottom: .25rem;
+          margin-bottom: .25rem;
+          font-weight: bold;
+          span{
+            display: block;
+          }
+        }
+      }
+      // for all more than 782px
+      @media screen and (min-width: $md+1){
+        label{
+          display: table-cell;
+          margin:0;
+          font-size: 1rem;
+          padding: .25rem .5rem;
+          font-weight: bold;
+          width: 8%;
+          span{
+            display: block;
+          }
+        }
+        label:first-child{
+          max-width: 16%;
+        }
+      }
+    }
+    .tab-content {
+      display: none;
+      width: 100%;
+      float: left;
+      padding: .5rem 1rem;
+      box-sizing: border-box;
+      background-color: $white-color;
+    }
+
+
+
+    .tab-content * {
+      -webkit-animation: scale 0.7s ease-in-out;
+      -moz-animation: scale 0.7s ease-in-out;
+      animation: scale 0.7s ease-in-out;
+
+    }
+    @keyframes scale {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.01);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+
+    .tabs [id^="tab"]:checked + label {
+      background: $orange-color;
+      color: $white-color;
+    }
+    #tab1:checked ~ #tab-content1,
+    #tab2:checked ~ #tab-content2,
+    #tab3:checked ~ #tab-content3,
+    #tab4:checked ~ #tab-content4,
+    #tab5:checked ~ #tab-content5
+    {
+      display: block;
+    }
+
+    /*TABS*/
+  }
+  .why-to-choose{
+    text-align: center;
+    padding: .75rem 1rem;
+    border-top: 2px dotted $orange-color;
+    border-bottom: 2px dotted $orange-color;
+  }
+  .why-to-choose-description{
+    padding: .5rem 1rem;
+    text-align: center;
+    p{
+      font-family: verdana, arial, helvetica, sans-serif;
+      color: $brown-color;
+    }
+  }
+  .thank-you{
+    background: rgba($black-color, .74);
+    color: $orange-color;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    vertical-align: middle;
+  }
+}
