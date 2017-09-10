@@ -1,2 +1,3 @@
 # ebay
-I've written some css code for ebay listing. 
+I've written template in SCSS for ebay listing.
+I'm using Hydra for listing contents.
