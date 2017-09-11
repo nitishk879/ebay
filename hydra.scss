@@ -8,13 +8,24 @@ $sm: 580px;
 $md: 782px;
 
 body{
-  h1, h2, h3, h4{
+  h1, h2, h3, h4, h5, h6{
     color: $orange-color;
   }
   .brand-logo{
     text-align: center;
+    @media screen and (max-width: $md){
+      img{
+        height: 70px;
+      }
+    }
+    @media screen and (min-width: $md+1){
+      img{
+        height: 160px;
+      }
+    }
   }
   .item-title{
+    color: $orange-color;
     padding: .5rem 1rem;
     text-align: center;
     border-top: 10px solid $orange-color;
@@ -82,7 +93,6 @@ body{
         }
       }
       // for all devices small than 782px
-
       @media screen and (max-width: $md){
         label{
           display: block;

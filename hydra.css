@@ -1,8 +1,15 @@
-body h1, body h2, body h3, body h4 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   color: #ffa300; }
 body .brand-logo {
   text-align: center; }
+  @media screen and (max-width: 782px) {
+    body .brand-logo img {
+      height: 70px; } }
+  @media screen and (min-width: 783px) {
+    body .brand-logo img {
+      height: 160px; } }
 body .item-title {
+  color: #ffa300;
   padding: .5rem 1rem;
   text-align: center;
   border-top: 10px solid #ffa300; }
